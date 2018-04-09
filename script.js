@@ -23,7 +23,15 @@ $(document).ready(function(){
                 }
 
             }
-        })
+        });
+        $(".button").hover(
+            function(){
+                $(this).addClass("hovered");
+            },
+            function(){
+                $(this).removeClass("hovered");
+            }
+        );
     },
     validIndex = function (indexToCheck){
         return (indexToCheck >= 0) && (indexToCheck < totalMainMenuItems)
